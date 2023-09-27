@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+
+
+    tools:context=".activities.login_signup">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical">
+
+
+
+    <TextView
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/knickknack_regular"
+        android:text="👋 Welcome Back,"
+        android:textSize="30sp" />
+
+    <TextView
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign In to continue"/>
+
+
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+    <EditText
+        android:id="@+id/emailLogin"
+        android:textColor="@color/white"
+        android:textColorHint="#a1a1a1"
+        android:padding="10dp"
+        android:background="@drawable/transparent_button_border"
+        android:fontFamily="@font/poppins_light"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter username or email"/>
+
+        <EditText
+            android:id="@+id/passwordLogin"
+            android:textColor="@color/white"
+            android:textColorHint="#a1a1a1"
+            android:padding="10dp"
+            android:background="@drawable/transparent_button_border"
+
+            android:fontFamily="@font/poppins_light"
+            android:inputType="textPassword"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="enter password"/>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:id="@+id/loginProgress"/>
+
+        <Button
+            android:id="@+id/login"
+            android:fontFamily="@font/poppins_light"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#e1e1e1"
+            android:textColor="@color/black"
+            android:layout_gravity="end"
+            android:text="Log In"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <TextView
+        android:id="@+id/ResetPassword"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_light"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot your password? Get help."
+        android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/create_new_acc"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_light"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account?"
+        android:layout_gravity="center"/>
+
+    <Button
+      android:layout_alignParentBottom="true"
+        android:fontFamily="@font/poppins_light"
+        android:id="@+id/create_new_acc"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/yellow"
+        android:textColor="@color/black"
+        android:layout_gravity="end"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="Create new account"/>
+
+
+
+
+
+</RelativeLayout>

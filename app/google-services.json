@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "682110183599",
+    "project_id": "boom2-a8677",
+    "storage_bucket": "boom2-a8677.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:682110183599:android:c19f7aa37e3547ac918c5a",
+        "android_client_info": {
+          "package_name": "com.codedance.boom"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4vYA8LQZsdWtyWObzhEROkBrbS0TLmPM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:682110183599:android:715eae6c51753369918c5a",
+        "android_client_info": {
+          "package_name": "com.codedance.boom.activities"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4vYA8LQZsdWtyWObzhEROkBrbS0TLmPM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

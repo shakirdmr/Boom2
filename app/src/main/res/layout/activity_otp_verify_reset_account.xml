@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".activities.forgotPassword.otpVerify_resetAccount">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/goBackHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/baseline_keyboard_backspace_24" />
+
+
+        <TextView
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/knickknack_regular"
+            android:text="📩 OTP - Reset Account"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/otpEMAIL"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="enter otp sent to email shakir@gmail.com"/>
+
+
+
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+            <EditText
+                android:id="@+id/editTextVerificationCode"
+                android:maxLength="6"
+                android:textColor="@color/white"
+                android:textColorHint="#a1a1a1"
+                android:padding="10dp"
+                android:background="@drawable/transparent_button_border"
+                android:fontFamily="@font/poppins_light"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="X X X X X X"/>
+
+
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"
+                android:id="@+id/progressCreatingnewAccount"/>
+
+
+            <Button
+                android:id="@+id/verifyCODE"
+                android:fontFamily="@font/poppins_light"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#e1e1e1"
+                android:textColor="@color/black"
+                android:layout_gravity="end"
+                android:text="Next"/>
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:fontFamily="@font/poppins_light"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="didn't get OTP? Wait 1 minute and also check email spam folder."
+                />
+
+
+            <TextView
+
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:fontFamily="@font/poppins_light"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="or \n Resend OTP"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
